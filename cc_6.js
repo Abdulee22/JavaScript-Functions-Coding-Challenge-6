@@ -54,6 +54,17 @@ let discountFunction = amount => amount > 500 ? amount * 0.9 : amount;
 let discountedOrders = applyBulkDiscount(orders, discountFunction);
 console.log(discountedOrders) // logged
 
+// Task 7- Business Expense Tracker //
+function createExpenseTracker() {
+ let totalExpenses = 0;
+ return function(expense) {  
+totalExpenses += expense; 
+return `Total Expenses: $${totalExpenses}`; } }
+let tracker = createExpenseTracker();// function for expense tracker
+console.log(tracker(200)); // output 200
+console.log(tracker(150)); // output 350
+    
+
     
     
     
