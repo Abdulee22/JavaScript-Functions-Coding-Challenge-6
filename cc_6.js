@@ -5,3 +5,10 @@ return `Total Profit: $${profit}`;} // calulation for the function
 console.log(calculateProfit(20, 30, 100)) // output 1000
 console.log(calculateProfit(50, 70, 200));// output 4000
     
+// Task 2 - Sales Tax Computation // 
+const calculateSalesTax = function(amount, taxRate) {
+let salesTax = Math.floor(amount * taxRate)
+ return `Sales Tax: $${salesTax}`; } //function for sales tax
+ console.log(calculateSalesTax(100, 0.07)); // output 7
+ console.log(calculateSalesTax(500, 0.1)); // output 50
+    
