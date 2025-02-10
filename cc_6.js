@@ -24,5 +24,20 @@ else if (performanceRating ="Average")
 return `Bonus: $${bonus}`;}; // function for bonus calculation
 console.log(calculateBonus(5000, "Excellent")); // output 1000
 console.log(calculateBonus(7000, "Good")); // output 700
+
+// Task 4 - Subscription Pricing Model //
+function calculateSubscriptionCost(plan, months, discount = 0) {
+let monthlyCost;
+if (plan = "Basic") 
+    {monthlyCost = 10}
+else if (plan = "Premium") 
+    { monthlyCost = 20}
+else if (plan = "Enterprise") 
+    {monthlyCost = 50}
+let totalCost = (monthlyCost * months) - discount;
+ return `Total Cost: $${totalCost}`;} // function for subscription calculation
+console.log(calculateSubscriptionCost("Basic", 6, 10)); // output 50
+console.log(calculateSubscriptionCost("Premium", 12, 0)); // output 240
+    
     
     
