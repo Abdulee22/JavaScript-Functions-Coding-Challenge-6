@@ -38,6 +38,15 @@ let totalCost = (monthlyCost * months) - discount;
  return `Total Cost: $${totalCost}`;} // function for subscription calculation
 console.log(calculateSubscriptionCost("Basic", 6, 10)); // output 50
 console.log(calculateSubscriptionCost("Premium", 12, 0)); // output 240
+
+// Task 5 - Currency Conversion //
+function convertCurrency(amount, exchangeRate) {
+let convertAmount = amount * exchangeRate
+return `Converted Amount: $${convertAmount.toFixed(2)}`;}; // function for currency conversion
+console.log(convertCurrency(100, 1.1)); // output 110.00
+console.log(convertCurrency(250, 0.85));// output 212.50
+    
+    
     
     
     
