@@ -45,6 +45,15 @@ let convertAmount = amount * exchangeRate
 return `Converted Amount: $${convertAmount.toFixed(2)}`;}; // function for currency conversion
 console.log(convertCurrency(100, 1.1)); // output 110.00
 console.log(convertCurrency(250, 0.85));// output 212.50
+
+// Task 6 - Higher-Order Function for Bulk Orders //
+let orders = [200, 600, 1200, 450, 800]; // orders
+function applyBulkDiscount(orders, discountFunction) 
+{return orders.map(discountFunction);}; // function for bulk discount orders
+let discountFunction = amount => amount > 500 ? amount * 0.9 : amount;
+let discountedOrders = applyBulkDiscount(orders, discountFunction);
+console.log(discountedOrders) // logged
+
     
     
     
