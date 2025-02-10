@@ -11,4 +11,18 @@ let salesTax = Math.floor(amount * taxRate)
  return `Sales Tax: $${salesTax}`; } //function for sales tax
  console.log(calculateSalesTax(100, 0.07)); // output 7
  console.log(calculateSalesTax(500, 0.1)); // output 50
+
+// Task 3 - Employee Bonus Calculation //
+const calculateBonus = (salary, performanceRating) => {
+let bonus;
+if (performanceRating ="Excellent") 
+    {bonus = salary * 0.2;}
+else if (performanceRating ="Good") 
+    {bonus = salary * 0.1;}
+else if (performanceRating ="Average") 
+    {bonus = salary * 0.5;}
+return `Bonus: $${bonus}`;}; // function for bonus calculation
+console.log(calculateBonus(5000, "Excellent")); // output 1000
+console.log(calculateBonus(7000, "Good")); // output 700
+    
     
